@@ -7,15 +7,15 @@ Servidor FTP em Ubuntu
 Certifique-se de que seu sistema esteja atualizado e, em seguida, instale o vsftpd usando o comando:
 
 sudo apt update
-<br>
+
+
 sudo apt install vsftpd
 
 
 Configurar o vsftpd:
 
 Abra o arquivo de configuração do vsftpd para edição com o seguinte comando:
-<br>
-<br>
+
 
 
 sudo nano /etc/vsftpd.conf
@@ -24,14 +24,14 @@ sudo nano /etc/vsftpd.conf
 Dentro do arquivo, certifique-se de que as seguintes linhas estejam configuradas:
 
 anonymous_enable=NO
-<br>
+
 local_enable=YES
-<br>
+
 write_enable=YES
-<br>
+
 chroot_local_user=YES
-<br>
-<br>
+
+
 Essas configurações desabilitam o acesso anônimo, permitem o acesso local, habilitam a gravação de arquivos e impõem o chroot para que os usuários fiquem confinados às suas próprias pastas.
 
 <h2>Crie as contas de usuário:</h2>
